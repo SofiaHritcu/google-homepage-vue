@@ -103,10 +103,6 @@
     text-decoration: none;
 }
 
-/* .action-button:focus {
-    border-color: blue !important;
-  } */
-
 .languages > p > :nth-child(1) {
     margin-right: 6px;
     margin-left: 3px;
@@ -119,4 +115,17 @@
 
 .languages > p > a {
     color: #1a0dab;
+}
+
+
+@media screen and (max-width: 625px){
+    .search {
+        width: 80%;
+        height: 15%;
+    }
+
+    .logo-image {
+        width:40vw;
+        margin-bottom: 1vw;
+    }
 }

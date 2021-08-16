@@ -2,8 +2,7 @@
     <a 
         v-for="link in links"
         :key="link.text"
-        class="footer-link"
-        aria-disabled="{{link.disabled}}"
+        v-bind:class="link.responsive"
         v-bind:href="link.href">
         {{link.text}}
     </a>
