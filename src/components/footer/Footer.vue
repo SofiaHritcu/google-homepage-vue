@@ -1,6 +1,6 @@
 <template>
-        <FooterLinks></FooterLinks>
         <FooterCountry></FooterCountry>
+        <FooterLinks></FooterLinks>
 </template>
 
 <script>
