@@ -1,13 +1,24 @@
 <template>
     <footer class="footer-country">
-        <div class="left-section">
-            <a class="footer-link" aria-disabled="true">România</a>
-        </div>
+        <FooterLeftSection v-bind:links="links" v-bind:href="links.href" v-bind:noRef="true"></FooterLeftSection>
     </footer>
 </template>
 
 <script>
-export default {
-    name: 'FooterCountry'
-}
+    import FooterLeftSection from './FooterLeftSection'
+
+    export default {
+        name: 'FooterCountry',
+        components: {
+            FooterLeftSection, 
+        },
+        data: function () {
+            return {links: [
+                {
+                    text: 'România',
+                    href: '', 
+                }
+            ]}
+        }
+    }
 </script>
