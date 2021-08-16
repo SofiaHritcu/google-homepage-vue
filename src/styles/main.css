@@ -1,32 +1,122 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    min-height: 300px;
+    margin-top: 17px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.logo-image {
+    margin-bottom: 26px;
+    /* margin-right: 1px; */
 }
 
-body {
-  font-family: arial, sans-serif;
-  line-height: 1.6;
-  margin-bottom: 100px;
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 580px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.search:hover {
+    border-color: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.input-search {
+    width: 110%;
+    height: 110%;
+    padding: 12px;
+}
+
+.icon-search {
+    opacity: 0.5; 
+    font-size: 20px !important;
+    margin-left: 5px;
+}
+
+.icon-keyboard {
+    opacity: 0.6;
+    font-size: 17px !important;
+    margin-right: 15px;
+    padding-bottom: 1px;
+    padding-top: 3px;
+}
+
+.icon-microphone {
+    width: 25px;
+    height: 25px;
+}
+
+.tooltip .tooltip-inner {
+    border-radius: 0%;
+    margin-top: 9px;
+    height: 27px;
+    vertical-align: center;
+    opacity: 0.95;
+    max-width: 100% !important;
+ }
+
+ .tooltip-arrow {
+    margin-top: 9px;
+} 
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.btn:focus, .btn:active, .btn.focus{
+    border:1px solid #4285f4 !important; 
+    box-shadow: none;
+    outline: unset !important;
+   }
+
+.action-button {
+    background-color: #f8f9fa;
+    margin-top: 30px;
+    height: 54%;
+    width: 105%;
 }
 
 
-button,
-input {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
+
+.action-button:hover {
+    border-color: #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.action-link {
+    color: black;
+}
+
+.action-link:visited,  .action-link:active{
+    color: darkgrey !important;
+    text-decoration: none;
+}
+
+/* .action-button:focus {
+    border-color: blue !important;
+  } */
+
+.languages > p > :nth-child(1) {
+    margin-right: 6px;
+    margin-left: 3px;
+}
+
+.languages > p {
+    margin-top: 27px;
+    font-size: 13px;
+}
+
+.languages > p > a {
+    color: #1a0dab;
 }
